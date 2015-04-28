@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BaseDatosEjemplo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="insertarDatos">Insertar</string>
+    <string name="mostrarDatos">Mostrar</string>
+    <string name="vaciarDatos">Vaciar</string>
+
+</resources>
