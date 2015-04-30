@@ -32,8 +32,6 @@ public class BaseDatosEjemplo extends Activity {
 	private static final int VERSION_ = 1;
 	private static final String BASEDATOS = "basedatos.db";
 
-	private Set<String> tablas;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,7 +39,7 @@ public class BaseDatosEjemplo extends Activity {
 
 		resultadoV = (TextView) findViewById(R.id.resultadoV);
 
-		tablas = new HashSet<String>();
+		Set<String> tablas = new HashSet<String>();
 
 		tablas.add("CREATE TABLE persona ("
 				+ "persona_id Integer PRIMARY KEY AUTOINCREMENT, "
@@ -82,6 +80,7 @@ public class BaseDatosEjemplo extends Activity {
 		resultadoV.setText(sb.toString());
 
 	}
+
 
 	public void mostrar(View v) {
 		List<Map<String, ?>> resultSet;

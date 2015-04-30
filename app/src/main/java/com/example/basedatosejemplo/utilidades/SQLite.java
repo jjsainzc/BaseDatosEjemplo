@@ -23,14 +23,12 @@ public class SQLite extends SQLiteOpenHelper {
 	private File pathDatabase;
 	@SuppressWarnings("unused")
 	private String database;
-	@SuppressWarnings("unused")
-	private Integer version;
 	private Set<String> tablas;
 
 	public SQLite(Context context, String database, int version, Set<String> tablas) {
 		super(context, database, null, version);
 		this.database = database;
-		this.version = version;
+		Integer version1 = version;
 		this.tablas = tablas;
 		pathDatabase = context.getDatabasePath(database);
 	}
